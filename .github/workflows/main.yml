@@ -1,0 +1,12 @@
+name: Run C/C++test
+  uses: parasoft/run-cpptest-action@0.2.3-alpha
+  with:
+    installDir: # optional
+    workingDir: # optional, default is ${{ github.workspace }}
+    compilerConfig: gcc_7-64 # optional, default is gcc_9-64
+    testConfig: # optional, default is builtin://Recommended Rules
+    reportDir: # optional, default is reports
+    reportFormat: # optional, default is xml,html,sarif
+    input: # optional, default is cpptestscan.bdf
+    additionalParams: # optional, default is 
+    commandLinePattern: # optional, default is ${cpptestcli} -compiler "${compilerConfig}" -config "${testConfig}" -property report.format=${reportFormat} -report "${reportDir}" -module . -input "${input}" ${additionalParams}
