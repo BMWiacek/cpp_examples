@@ -1,4 +1,4 @@
-- name: Run C/C++test
+name: Run C/C++test
   # You may pin to the exact commit or the version.
   # uses: parasoft/run-cpptest-action@d2b3ec20b026ac0a1abd53af058e21ecb0f99e56
   uses: parasoft/run-cpptest-action@0.2.3-alpha
