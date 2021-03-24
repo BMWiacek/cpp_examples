@@ -7,8 +7,6 @@ ATM::ATM(Bank* bank, BaseDisplay* display)
     myDisplay = display;
 }
 
-//comment
-
 void ATM::viewAccount(int accountNumber, string password)
 {
     if ( !(myCurrentAccount = myBank->getAccount(accountNumber, password)) )
