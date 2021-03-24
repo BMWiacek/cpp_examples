@@ -36,7 +36,7 @@ jobs:
       # Use dedicated 'run-cpptest-action' GitHub Action.
       uses: parasoft/run-cpptest-action@0.2.3-alpha
       with:
-        input: cpptest.bdf
+        input: ATM/cpptest.bdf
         compilerConfig: 'gcc_7-64'
       # Uncomment for C/C++test 2020.2 to generate SARIF report:
       # with:
