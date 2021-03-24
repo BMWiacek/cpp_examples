@@ -37,6 +37,7 @@ jobs:
       uses: parasoft/run-cpptest-action@1.0.0
       with:
         input: cpptest.bdf
+        compilerConfig: 'gcc_7-64'
       # Uncomment for C/C++test 2020.2 to generate SARIF report:
       # with:
       #   reportFormat: xml,html,custom
