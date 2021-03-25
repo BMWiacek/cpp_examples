@@ -38,7 +38,7 @@ jobs:
       with:
         input: ATM/cpptest.bdf
         compilerConfig: 'gcc_7-64'
-        reportFormat: html
+        reportFormat: html,sarif
         reportDir: reportsCLI
       # Uncomment for C/C++test 2020.2 to generate SARIF report:
       # with:
