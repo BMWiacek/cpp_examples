@@ -38,8 +38,9 @@ jobs:
       with:
         input: ATM/cpptest.bdf
         compilerConfig: 'gcc_7-64'
-        reportFormat: html,sarif
+        reportFormat: custom
         reportDir: reportsCLI
+        additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
       # Uncomment for C/C++test 2020.2 to generate SARIF report:
       # with:
       #   reportFormat: xml,html,custom
