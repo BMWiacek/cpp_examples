@@ -46,10 +46,10 @@ jobs:
       #   additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
 
     # Upload analysis results in SARIF format, so they are available as GitHub code scanning alerts.
-    #- name: Upload results (SARIF)
-    #  uses: github/codeql-action/upload-sarif@v1
-    #  with:
-    #    sarif_file: reports/report.sarif
+    - name: Upload results (SARIF)
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+        sarif_file: reports/report.sarif
     
     # Upload archive with all report files (.xml, .html, .sarif).
     - name: Archive reports
